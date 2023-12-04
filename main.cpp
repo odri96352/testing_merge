@@ -3,7 +3,7 @@
 #include<iostream>
 
 void test_constructeur_default();
-// void test_copy_constructor(string t);
+void test_copy_constructor(string wrong_string);
 // void test_c_str(string t);
 // void test_clear();
 // void test_constructor_c_string(char* s);
@@ -22,8 +22,8 @@ void test_constructeur_default();
 int main(){
   test_constructeur_default();
 
-  // string test = string();
-  // test_copy_constructor(test);
+  string test_audrey = string();
+  test_copy_constructor(test_audrey);
   // test_c_str(test);
   // test_clear();
   //
@@ -55,13 +55,13 @@ void test_constructeur_default(){
   std::cout <<std::endl;
 };
 
-// void test_copy_constructor(string t){
-//   std::cout << "test the copy constructor"<<std::endl;
-//   string test_copy=string(t);
-//   test_copy.print();
-//   std::cout <<std::endl;
-// };
-//
+void test_copy_constructor(string wrong_string){
+  std::cout << "test the copy constructor"<<std::endl;
+  string test_copy=string(t);
+  test_copy.print();
+  std::cout <<std::endl;
+};
+
 // void test_c_str(string t){
 //   std::cout << "test the conversion string to array of characters"<<std::endl;
 //   std::cout<<t.c_str()<<std::endl;

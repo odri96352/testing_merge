@@ -1,7 +1,7 @@
 class string{
   public :
     string();
-    // string(const string& copy);
+    string(const string& wrong_name);
     // string(char* s);
     // string(char* s, int n);
     ~string();
