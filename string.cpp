@@ -28,18 +28,18 @@ string::string(){
 //   return size_max;
 // };
 //
-// string::string(const string& copy){
-//   int length=copy.size_;
-//   if(length > size_max){    /// if à supprimer, vu qu'un string de toute façon ne peut pas dépasser une taille maximale
-//     std::cout<<'W'<<std::endl;
-//   }
-// 	list_char_ = new char[length];
-// 	size_ = length;
-//   capacity_ = length;
-// 	for (int i = 0; i<length; i++){
-// 	    list_char_[i] = copy.list_char_[i];
-// 	}
-// };
+string::string(const string& copy){
+  int length=copy.size_;
+  if(length > size_max){    /// if à supprimer, vu qu'un string de toute façon ne peut pas dépasser une taille maximale
+    std::cout<<'W'<<std::endl;
+  }
+	list_char_ = new char[length];
+	size_ = length;
+  capacity_ = length;
+	for (int i = 0; i<length; i++){
+	    list_char_[i] = copy.list_char_[i];
+	}
+};
 //
 // void string::print(){
 //   for(int i=0; i<this->size_; ++i){
